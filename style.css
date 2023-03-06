@@ -1,0 +1,87 @@
+.h1 {
+  color: rgba(171, 68, 68, 0.929);
+  text-align: center;
+  font-size: 50px;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: -1px -1px 0 rgb(74, 44, 44), 1px -1px 0 white, -1px 1px 0 blueviolet, 1px 1px 0 white;
+  background-color: rgba(224, 218, 208, 0.5);
+  border-color: rgb(247, 245, 240);
+  border-radius: 15px;
+  border-width: 5px;
+  border-style: groove;
+  font-style: bold;
+}
+
+.input {
+  display: flex;
+  text-align: center;
+  width: 600px;
+  height: 320px;
+  font-weight: bold;
+  color: grey;
+  font-size: 40px;
+  font-style: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: block;
+}
+.input .boy img {
+  position: absolute; /* set the position property of the image to absolute */
+  top: 20%; /* set the top property of the image to 0 */
+  right: 0; /* set the right property of the image to 0 */
+  max-width: 30%; /* set the maximum width of the image to 100% */
+}
+
+.options {
+  color: red;
+  align-items: center;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: inset;
+  margin-left: 4%;
+  font-size: 30px;
+  width: 600px;
+  top: 50%;
+  position: absolute;
+  height: 200px;
+  font-weight: bold;
+  padding-left: 3%;
+  background-color: rgba(134, 174, 111, 0.5);
+}
+.options input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+.options input[type=radio]:checked + label:before {
+  background-color: #666;
+}
+.options input[type=radio] + label {
+  position: absolute;
+  cursor: pointer;
+  padding-left: 30px;
+}
+.options input[type=radio] + label:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #bc2f2f;
+}
+.options button[type=submit] {
+  margin-top: 10px;
+}
+
+.body_container {
+  background-image: url("lib.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
